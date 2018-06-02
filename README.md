@@ -1,4 +1,4 @@
-# Cat_Rescue_Centre_Server
+# Cat Rescue Centre
 A simple http server for a cat rescue centre website
 
 ## Summary
