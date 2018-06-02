@@ -1,0 +1,148 @@
+.navi
+{
+	margin: -60px 150px 10px 150px;
+	padding: 0;
+	background-color: #000;
+	border-radius: 5px;
+	height:50px;
+}
+
+.navi  li{display: inline-block; -webkit-transition:1s;}
+.navi  li a
+{
+	margin: auto;
+	display: inline-block;
+	padding: 15px 30px 15px 105px !important;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.btnsize{
+	width: 150px;
+}
+.navi li a:hover
+{
+	margin: auto;
+	display: inline-block;
+	padding: 15px 30px 15px 105px !important;
+	color: #ffff00;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.li{
+	margin:0;
+	padding: 5px;
+	-webkit-transition:0.5s;
+	width:230px;
+	background:red;
+}
+.aboutus{
+	margin:0 0 0 190px;
+}
+.donate{
+	margin:0 0 0 440px;
+}
+.adopt{
+	margin:0 0 0 600px;
+}
+.contactus{
+	margin:0 0 0 850px;
+}
+
+.navi li:hover:nth-child(1) ~ .li
+{margin:0 0 0 0px;}
+
+.navi li:hover:nth-child(2) ~ .li
+{margin:0 0 0 190px;}
+
+.navi li:hover:nth-child(3) ~ .li
+{margin:0 0 0 440px;}
+
+.navi li:hover:nth-child(4) ~ .li
+{margin:0 0 0 600px;}
+
+.navi li:hover:nth-child(5) ~ .li
+{margin:0 0 0 850px;}
+
+
+.name
+{
+	text-align:right;
+	 padding: 5px;
+}
+.data
+{
+	text-align:left;
+	 padding: 6px;
+}
+.s
+{
+	color:red;
+}
+.jumbotron {
+background: #358CCE;
+color: #FFF;
+border-radius: 0px;
+}
+.jumbotron-sm { padding-top: 24px;
+padding-bottom: 24px; }
+.jumbotron small {
+color: #FFF;
+}
+.h1 small {
+font-size: 24px;
+}
+
+.price-box {
+    margin: 0 auto;
+	background: #E9E9E9;
+	border-radius: 10px;
+	padding: 40px 15px;
+	width: 500px;
+}
+
+.price-form {
+	background: #ffffff;
+	margin-bottom: 10px;
+	padding: 20px;
+	border: 1px solid #eeeeee;
+	border-radius: 4px;
+}
+
+.form-pricing {
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+
+.price-form label {
+	font-weight: 200;
+	font-size: 21px;
+}
+
+.help-text {
+	display: block;
+	margin-top: 32px;
+	margin-bottom: 10px;
+	color: #737373;
+	position: absolute;
+	/*margin-left: 20px;*/
+	font-weight: 200;
+	text-align: right;
+	width: 188px;
+}
+
+.form-group {
+	margin-bottom: 0;
+}
+
+.form-group span.price {
+	font-weight: 200;
+	display: inline-block;
+	color: #7f8c8d;
+	font-size: 14px;
+}

@@ -1,0 +1,60 @@
+
+<html lang="en">
+  <head>
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./bootstrap3.1.0/css/bootstrap.css">
+<link rel="stylesheet" href="./bootstrap3.1.0/css/bootstrap.theme.css">
+	<!-- My CSS	-->
+	<link href="style.css"  rel="stylesheet"/>
+
+  </head>
+  <body>
+	<div>
+		<img style=" width:100%; position:relative; z-index:-5; " src="./pics/logo.png" />
+		<ul class="navi"  >
+			<li><a href="./home_page" title="">home</a></li>
+			<li><a href="./about_us" title="">about us</a></li>
+			<li><a href="./donate" title="">donate</a></li>
+			<li><a href="./adopt" title="">Adopt</a></li>
+			<li><a href="./contact_us" title="">contact us</a></li>
+			<div class="li"> </div>
+		</ul>
+	</div>
+    <!-- Slider -->
+    <div class="carousel slide" id="myCarousel">
+    <!-- Carousel items -->
+		<div class="carousel-inner" style="display: inline-block; margin:auto; width:100%;">
+			<div class="active item"  data-slide-number="0">
+				<img src="./pics/homepage1.jpg">
+			</div>
+			
+			<div class="item" data-slide-number="1" >
+				<img src="./pics/homepage2.jpg">
+			</div>
+	
+			<div class="item" data-slide-number="2">
+				<img src="./pics/homepage3.jpg">
+			</div>		
+		</div><!-- Carousel nav -->
+    
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left pull-left" ></span>                                       
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right pull-right" ></span>                                       
+		</a>                                
+    </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+	<!-- jQuery first, then Bootstrap JS -->
+    <script src="./bootstrap3.1.0/js/jquery.min.js"></script>
+    <script src="./bootstrap3.1.0/js/bootstrap.js"></script>
+	<!-- My JS -->
+	<script src="./script.js"></script>
+  </body>
+</html>

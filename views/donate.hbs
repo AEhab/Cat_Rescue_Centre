@@ -1,0 +1,74 @@
+
+<html lang="en">
+  <head>
+    
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./bootstrap3.1.0/css/bootstrap.css">
+	<link rel="stylesheet" href="./bootstrap3.1.0/css/bootstrap.theme.css">
+	<!-- My CSS	-->
+	<link href="style.css"  rel="stylesheet"/>
+
+  </head>
+  <body>
+	<div>
+		<img style=" width:100%; position:relative; z-index:-5; " src="./pics/logo.png" />
+		<ul class="navi"  >
+						<li><a href="./home_page" title="">home</a></li>
+			<li><a href="./about_us" title="">about us</a></li>
+			<li><a href="./donate" title="">donate</a></li>
+			<li><a href="./adopt" title="">Adopt</a></li>
+			<li><a href="./contact_us" title="">contact us</a></li>
+			<div class="li donate"> </div>
+		</ul>
+	</div>
+	 <br/><br/>
+<div class="container">
+
+      <div class="price-box">
+
+        <form action="/payform" method="post"  class="form-horizontal form-pricing" >
+
+          <div class="price-form">
+             
+            <div class="form-group">
+			<div style="align:middle; margin:auto; width:80%;" >
+			<table  style="width:100%;">
+			<tr>
+			<td > <input type="radio" onclick="changecatID()" name="donation_type" value="The Centre" checked> To The Centre </td> 
+			<td > <input ID="radiocatID" type="radio" name="donation_type" onclick="changecatID()" value="Cat" {{checkme}}> To Special Cat </td>
+			</tr>
+			</table>
+			<input  class="data form-control" ID="textcatID" name="catid" type="number" value="{{catid}}" placeholder="Enter Cat ID" disabled /> 
+			or you can choose the cat from <a href="./adopt" > HERE </a>.
+			</div>
+			 <br/>
+              <label for="amount" class="col-sm-6 control-label">Amount ($): </label>
+              <span class="help-text">Please choose your amount</span>
+              <div class="col-sm-6">
+                <input type="number" name="donat_value" id="amount" onblur="amountdonated()" class="form-control" value="10.0">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+			  <button type="submit"  onclick="changecatID()" class="btn btn-primary btn-lg btn-block">Proceed <span class="glyphicon glyphicon-chevron-right pull-right" style="padding-right: 10px;"></span></button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <img style="margin:auto;" src="./pics/payment.png" class="img-responsive payment">
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+	<script src="./bootstrap3.1.0/js/bootstrap.js"></script>
+	<script src="./script.js"> </script>
+	<!-- My JS -->
+  </body>
+</html>

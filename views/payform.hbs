@@ -1,0 +1,76 @@
+
+<html lang="en">
+  <head>
+   
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./bootstrap3.1.0/css/bootstrap.css">
+	<link rel="stylesheet" href="./bootstrap3.1.0/css/bootstrap.theme.css">
+	<!-- My CSS	-->
+	<link href="./style.css"  rel="stylesheet"/>
+
+  </head>
+  <body>
+	<div>
+		<img style=" width:100%; position:relative; z-index:-5; " src="./pics/logo.png" />
+		<ul class="navi"  >
+			<li><a href="./home_page" title="">home</a></li>
+			<li><a href="./about_us" title="">about us</a></li>
+			<li><a href="./donate" title="">donate</a></li>
+			<li><a href="./adopt" title="">Adopt</a></li>
+			<li><a href="./contact_us" title="">contact us</a></li>
+			<div class="li donate"> </div>
+		</ul>
+	</div>
+	<br/><br/><br/><br/>
+	<form action="" method="post" enctype="multipart/form-data" >
+	<div style="align:middle; margin:auto; width:20%;" >
+	<img src="./pics/finger.png"/>
+	Choose apayment method <br/><br/>
+	<input type="radio" name="cardtype" value="1" checked> <img src="./pics/master.png"/>
+  <input type="radio" name="cardtype" value="2"> <img src="./pics/visa.png"/>
+  <input type="radio" name="cardtype" value="3"> <img src="./pics/paypal.png"/>
+	</div>
+	<div style="align:middle; margin:auto; width:80%; border-style:solid; border-width:1px;">
+	<br/>
+	<br/>
+	<div style="align:middle; margin:auto; width:50%;">
+	<table style="width:100%;">
+	<tr>
+	<td class="name">Fullname:<span class="s">*</span> </td> <td class="data" > <input id="fullname" name="fullname" class="data form-control" placeholder="Enter name" required="required" type="text" /> </td>
+	</tr>
+	<tr>
+	<td class="name">Email: <span class="s">*</span> </td>  <td class="data"> <input class="data form-control" name="email" placeholder="Enter email" required="required" type="email" /> </td>
+	</tr>
+	<tr>
+	<td class="name">Card number:<span class="s">*</span> </td> <td class="data"> <input id="cardno" class="data form-control" type="number" placeholder="Enter Card number" required="required" /> </td>
+	</tr>
+	<tr>
+	<td class="name">Name on card: <span class="s">*</span></td> <td class="data"> <input class="data form-control" type="text" placeholder="Enter name on the card" required="required" /> </td>
+	</tr>
+	<tr>
+	<td class="name">Expiry date: <span class="s">*</span></td> <td class="data"> <input id="exdate" class="data form-control"type="date" placeholder="Enter expiry date" required="required" /> </td>
+	</tr>
+	<tr>
+	<td class="name">Security code: <span class="s">*</span> </td> <td class="data"> <input id="securityno" name="secno" class="data form-control" placeholder="Enter security code" required="required" type="number" /> </td>
+	</tr>
+	<tr><td  class=" name" ><label >Amount ($): </label> </td> <td class="data"><label id="amount"> {{money}}</label></td>  </tr>
+	
+	<tr><td  class=" name" ><label > Donat To: </label> </td> <td class="data"><label id="amount"> {{type}}</label></td>  </tr>
+		<tr {{hide}}><td  class=" name" ><label >Cat ID: </label> </td> <td class="data"><label id="amount"> {{catid}}</label></td>  </tr>
+	
+	</table>
+	
+	<br/>
+	<button width="70px" type="submit" onclick="checkpayform()" class="btn btn-primary btn-lg btn-block">Pay <span class="glyphicon glyphicon-chevron-right pull-right" style="padding-right: 10px;"></span></button> 
+	</div>
+	<br/>
+	<br/>
+	</div>
+	</form>
+	<br/><br/><br/><br/>
+	 <script src="./bootstrap3.1.0/js/jquery.min.js"></script>
+	<script src="./bootstrap3.1.0/js/bootstrap.js"></script>
+	<!-- My JS -->
+	<script src="./script.js"></script>
+  </body>
+</html>

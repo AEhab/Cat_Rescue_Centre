@@ -1,0 +1,20 @@
+{
+  "name": "rescue-centre",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "alert-node": "^0.2.1",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dialog": "^0.3.1",
+    "express": "~4.15.5",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^3.0.0-rc0",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5"
+  }
+}
